@@ -26,7 +26,7 @@ const NavBar = (props) => {
       _id = "";
     }
 
-    MessageService.getAllTrue()
+    CaseService.getAllTrue()
       .then((data) => {
         console.log("Data", data.data);
         setCaseData(data.data);
